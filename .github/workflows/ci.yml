@@ -20,20 +20,17 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: Run linter
-        run: pnpm lint
+        run: npm run lint
 
       - name: Build project
-        run: pnpm build
+        run: npm run build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build-files
-          path: out/ 
+          path: .next/ 
