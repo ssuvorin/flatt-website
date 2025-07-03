@@ -1,0 +1,21 @@
+{
+  "name": "Flatt - Property Management",
+  "short_name": "Flatt",
+  "description": "Property management app for Dubai tenants and owners",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#006AFF",
+  "theme_color": "#006AFF",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
