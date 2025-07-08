@@ -110,42 +110,40 @@ export default function HowItWorks() {
                 key={step.title}
                 variants={itemVariants}
                 className={`flex flex-col lg:flex-row items-center gap-8 ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                 }`}
               >
                 {/* Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <div className="glass rounded-xl p-6 lg:p-8 max-w-md mx-auto lg:mx-0">
-                    <div className="flex items-center justify-center lg:justify-start mb-4">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${step.color} rounded-lg flex items-center justify-center mr-4`}>
-                        <step.icon size={24} className="text-white" />
-                      </div>
-                      <span className="text-sm font-medium text-brand-blue">Step {index + 1}</span>
+                  <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4">
+                    <div className={`w-16 h-16 bg-gradient-to-r ${step.color} rounded-xl flex items-center justify-center shadow-lg`}>
+                      <step.icon size={32} className="text-white" />
                     </div>
-                    
-                    <h3 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-3">
-                      {step.title}
-                    </h3>
-                    
-                    <p className="text-gray-600 leading-relaxed">
-                      {step.description}
-                    </p>
+                    <div className="text-3xl font-bold text-gray-300">
+                      {String(index + 1).padStart(2, '0')}
+                    </div>
+                  </div>
+                  
+                  <div className="text-xl lg:text-2xl font-semibold text-gray-800 mb-3">
+                    {step.title}
+                  </div>
+                  
+                  <p className="text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
+                    {step.description}
+                  </p>
+                </div>
+
+                {/* Illustration placeholder */}
+                <div className="flex-1 flex justify-center">
+                  <div className="w-64 h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center">
+                    <div className={`w-24 h-24 bg-gradient-to-r ${step.color} rounded-full opacity-20`} />
                   </div>
                 </div>
-
-                {/* Timeline Point */}
-                <div className="hidden lg:flex w-16 h-16 bg-white border-4 border-brand-blue rounded-full items-center justify-center shadow-brand z-10">
-                  <div className="w-6 h-6 bg-brand-blue rounded-full" />
-                </div>
-
-                {/* Spacer */}
-                <div className="flex-1 hidden lg:block" />
               </motion.div>
             ))}
           </motion.div>
         </div>
 
-        {/* Bottom Stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

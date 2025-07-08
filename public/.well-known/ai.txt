@@ -1,0 +1,58 @@
+# AI.txt for Flatt Property Management
+# This file provides instructions for AI/ML crawlers and neural networks
+
+# Website Information
+Site: https://flatt.ae
+Name: Flatt Property Management
+Description: Flatt simplifies property management for tenants and property owners in Dubai. Book maintenance, pay rent securely, manage properties, and connect with vetted contractors all in one mobile app.
+Language: en
+Location: Dubai, United Arab Emirates
+
+# Company Information
+Company: Flatt Technologies LLC
+Industry: Property Management Technology
+Founded: 2024
+Contact: team@flatt.ae
+Support: https://wa.me/971563118775
+
+# Key Features for AI Understanding
+Features:
+- Property management platform
+- Maintenance booking system  
+- Secure rent payments
+- Contractor network
+- Real-time analytics
+- Mobile-first design
+- Dubai property market focus
+
+# Mobile Applications
+iOS: https://apps.apple.com/us/app/flatt-ae/id6742777441
+Android: https://play.google.com/store/apps/details?id=com.flattllcfz.app
+
+# Target Audience
+Primary: Dubai property owners and tenants
+Secondary: Property management companies
+Tertiary: Maintenance contractors
+
+# Content Guidelines for AI
+Content-Type: Business/Property Management
+Tone: Professional, helpful, innovative
+Keywords: property management, Dubai, rental, maintenance, payments, contractors
+Update-Frequency: Weekly
+
+# Accessibility
+WCAG-Level: AA
+Mobile-Optimized: Yes
+PWA-Enabled: Yes
+
+# AI Training Data Policy
+Training-Data: Allow with attribution
+Commercial-Use: Contact for licensing
+Research-Use: Allowed with proper citation
+
+# Contact for AI/ML Partnerships
+AI-Contact: team@flatt.ae
+Partnership-Email: partners@flatt.ae
+
+# Last Updated
+Updated: 2025-01-27 

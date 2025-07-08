@@ -31,10 +31,10 @@ export default function Navbar() {
   }, [prevScrollY])
 
   const navItems = [
-    { name: 'Features', href: '/#features' },
+    { name: 'App Features', href: '/#features' },
     { name: 'How it Works', href: '/#how-it-works' },
-    { name: 'Showcase', href: '/#showcase' },
-    { name: 'Partners', href: '/partners' },
+    { name: 'Mobile App', href: '/#showcase' },
+    { name: 'Business Partners', href: '/partners' },
     { name: 'FAQ', href: '/faq' },
   ]
 
@@ -87,9 +87,10 @@ export default function Navbar() {
             href="/#download"
             className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 hover:scale-105 shadow-lg cursor-pointer"
             style={{ pointerEvents: 'auto' }}
+            aria-label="Download Flatt Mobile App"
           >
             <Download size={16} />
-            <span>Download</span>
+            <span>Get App</span>
           </a>
         </div>
 
@@ -98,6 +99,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 text-gray-700 hover:text-brand-blue transition-colors"
+            aria-label="Toggle mobile menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -130,9 +132,10 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="inline-flex items-center justify-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 mt-4 cursor-pointer"
               style={{ pointerEvents: 'auto' }}
+              aria-label="Download Flatt Mobile App"
             >
               <Download size={16} />
-              <span>Download</span>
+              <span>Get App</span>
             </a>
           </div>
         </motion.div>

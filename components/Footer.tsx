@@ -1,18 +1,18 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
+import { Mail, Phone, MapPin, ExternalLink, Share2, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Footer() {
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '#' },
-      { name: 'How it Works', href: '#how-it-works' },
-      { name: 'Features', href: '#features' },
-      { name: 'Partners', href: '/partners' },
-      { name: 'Reviews', href: '#reviews' },
+      { name: 'About Flatt', href: '#' },
+      { name: 'How Flatt Works', href: '#how-it-works' },
+      { name: 'App Features', href: '#features' },
+      { name: 'Business Partners', href: '/partners' },
+      { name: 'User Reviews', href: '#reviews' },
     ],
     legal: [
       { name: 'Privacy Policy', href: '/legal/privacy' },
@@ -23,18 +23,32 @@ export default function Footer() {
     ],
     support: [
       { name: 'Help Center', href: '#' },
-      { name: 'Contact Us', href: 'https://wa.me/971563118775' },
+      { name: 'WhatsApp Support', href: 'https://wa.me/971563118775' },
       { name: 'Report Issue', href: '#' },
-      { name: 'Status', href: '#' },
+      { name: 'Service Status', href: '#' },
     ],
   }
 
   const socialLinks = [
-    { name: 'LinkedIn', href: '#', icon: '💼' },
-    { name: 'Twitter', href: '#', icon: '🐦' },
-    { name: 'Instagram', href: '#', icon: '📸' },
-    { name: 'Facebook', href: '#', icon: '📘' },
+    { name: 'LinkedIn', href: 'https://linkedin.com/company/flatt-ae', icon: '💼' },
+    { name: 'Twitter', href: 'https://twitter.com/flatt_ae', icon: '🐦' },
+    { name: 'Instagram', href: 'https://instagram.com/flatt.ae', icon: '📸' },
+    { name: 'Facebook', href: 'https://facebook.com/flatt.ae', icon: '📘' },
   ]
+
+  const shareUrl = 'https://flatt.ae'
+  const shareText = 'Check out Flatt - Property Management Made Simple in Dubai!'
+
+  const handleShare = (platform: string) => {
+    const urls = {
+      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`,
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+      whatsapp: `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`,
+    }
+    
+    window.open(urls[platform as keyof typeof urls], '_blank', 'width=600,height=400')
+  }
 
   return (
     <footer className="bg-gray-900 text-white relative overflow-hidden">
@@ -61,6 +75,56 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10">
+        {/* Social Sharing Section */}
+        <div className="border-b border-gray-800">
+          <div className="max-w-7xl mx-auto px-4 py-6">
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <div className="mb-4 md:mb-0">
+                <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
+                  <Share2 size={20} />
+                  <span>Share Flatt with Friends</span>
+                </h3>
+                <p className="text-gray-400 text-sm">Help others discover simplified property management</p>
+              </div>
+              
+              <div className="flex space-x-3">
+                <button
+                  onClick={() => handleShare('whatsapp')}
+                  className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors text-sm"
+                  aria-label="Share on WhatsApp"
+                >
+                  <MessageCircle size={16} />
+                  <span>WhatsApp</span>
+                </button>
+                <button
+                  onClick={() => handleShare('twitter')}
+                  className="flex items-center space-x-2 bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition-colors text-sm"
+                  aria-label="Share on Twitter"
+                >
+                  <span>🐦</span>
+                  <span>Twitter</span>
+                </button>
+                <button
+                  onClick={() => handleShare('facebook')}
+                  className="flex items-center space-x-2 bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded-lg transition-colors text-sm"
+                  aria-label="Share on Facebook"
+                >
+                  <span>📘</span>
+                  <span>Facebook</span>
+                </button>
+                <button
+                  onClick={() => handleShare('linkedin')}
+                  className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors text-sm"
+                  aria-label="Share on LinkedIn"
+                >
+                  <span>💼</span>
+                  <span>LinkedIn</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid lg:grid-cols-5 gap-8">
@@ -84,9 +148,9 @@ export default function Footer() {
               </div>
               
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Flatt is a team of professionals focused on making property management 
-                simple and efficient using technology. Streamline your rental process 
-                with our mobile-first platform
+                Flatt is a team of professionals focused on making <strong>property management 
+                simple and efficient</strong> using technology. Streamline your rental process 
+                with our mobile-first platform designed for Dubai's property market.
               </p>
               
               <div className="space-y-3 text-sm text-gray-400">
@@ -161,8 +225,8 @@ export default function Footer() {
           >
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0">
-                <h4 className="text-lg font-semibold mb-2">Download Flatt Today</h4>
-                <p className="text-gray-400 text-sm">Available on iOS and Android</p>
+                <h4 className="text-lg font-semibold mb-2">Get Flatt Mobile App</h4>
+                <p className="text-gray-400 text-sm">Available for free on iOS and Android</p>
               </div>
               
               <div className="flex space-x-4">
@@ -171,6 +235,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"
+                  aria-label="Download Flatt Property Management on App Store"
                 >
                   <span className="text-2xl">📱</span>
                   <div className="text-sm">
@@ -184,6 +249,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"
+                  aria-label="Get Flatt Property Management on Google Play"
                 >
                   <span className="text-2xl">🤖</span>
                   <div className="text-sm">
@@ -201,7 +267,7 @@ export default function Footer() {
           <div className="max-w-7xl mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
               <div className="mb-4 md:mb-0">
-                <p>&copy; 2025 Flatt. All rights reserved.</p>
+                <p>&copy; 2025 Flatt Technologies. All rights reserved.</p>
               </div>
               
               <div className="flex items-center space-x-6">
@@ -210,8 +276,11 @@ export default function Footer() {
                   <a
                     key={social.name}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-brand-sky transition-colors"
-                    title={social.name}
+                    title={`Follow Flatt on ${social.name}`}
+                    aria-label={`Follow Flatt on ${social.name}`}
                   >
                     <span className="text-lg">{social.icon}</span>
                   </a>

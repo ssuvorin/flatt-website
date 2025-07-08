@@ -1,21 +1,74 @@
 {
-  "name": "Flatt - Property Management",
+  "name": "Flatt - Property Management Made Simple",
   "short_name": "Flatt",
-  "description": "Property management app for Dubai tenants and owners",
+  "description": "Flatt simplifies property management for tenants and property owners in Dubai. Book maintenance, pay rent securely, manage properties through our innovative mobile app.",
   "start_url": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#006AFF",
   "theme_color": "#006AFF",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "scope": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/android-chrome-512x512.png", 
       "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Download App",
+      "short_name": "Download",
+      "description": "Download Flatt mobile app",
+      "url": "/#download",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact Support",
+      "short_name": "Support",
+      "description": "Get help via WhatsApp",
+      "url": "https://wa.me/971563118775",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "640x1280",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Flatt Mobile App Interface"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide", 
+      "label": "Flatt Website Homepage"
     }
   ]
 } 

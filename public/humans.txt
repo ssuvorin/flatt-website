@@ -1,0 +1,118 @@
+/* TEAM */
+  
+  Founder & CEO: [Name]
+  Site: flatt.ae
+  Location: Dubai, UAE
+  
+  Development Team: Flatt L.L.C-FZ
+  Contact: team@flatt.ae
+  From: Dubai, United Arab Emirates
+
+/* THANKS */
+
+  To all property owners and tenants in Dubai who trust Flatt
+  To our contractor partners for quality service
+  To the Next.js and React communities
+  To Vercel for excellent hosting
+
+/* SITE */
+
+  Last update: 2025/01/27
+  Language: English / العربية
+  Doctype: HTML5
+  IDE: VSCode, Cursor
+  Framework: Next.js 14
+  Styling: TailwindCSS
+  Animation: Framer Motion
+  Hosting: Vercel
+  Analytics: Google Analytics
+  Maps: Google Maps
+  Payments: Stripe
+  Communication: WhatsApp Business API
+  
+/* STANDARDS */
+
+  HTML5
+  CSS3
+  Responsive Design
+  WCAG 2.1 AA
+  Schema.org Structured Data
+  Open Graph Protocol
+  Twitter Cards
+  PWA Ready
+  SEO Optimized
+  Performance Optimized
+
+/* STACK */
+
+  Frontend: Next.js, TypeScript, TailwindCSS
+  Backend: Node.js, Serverless Functions
+  Database: [Database Type]
+  Authentication: [Auth Provider]
+  Payment Processing: Stripe
+  File Storage: [Storage Provider]
+  CDN: Vercel Edge Network
+  Monitoring: [Monitoring Service]
+
+/* MOBILE APPS */
+
+  iOS: Swift/React Native
+  Android: Kotlin/React Native
+  Cross-platform: React Native
+  State Management: Redux/Zustand
+  Navigation: React Navigation
+  
+/* DEVICES TESTED */
+
+  iPhone 14 Pro Max
+  iPhone 13 Mini  
+  Samsung Galaxy S23 Ultra
+  iPad Pro 12.9"
+  iPad Mini
+  MacBook Pro 16"
+  Dell XPS 13
+  Surface Pro 9
+
+/* BROWSERS TESTED */
+
+  Chrome 120+
+  Safari 17+
+  Firefox 119+
+  Edge 119+
+  Mobile Safari
+  Chrome Mobile
+  Samsung Internet
+
+/* SOCIAL MEDIA */
+
+  LinkedIn: linkedin.com/company/flatt-ae
+  Twitter: @flatt_ae
+  Instagram: @flatt.ae
+  Facebook: facebook.com/flatt.ae
+
+/* PRIVACY */
+
+  We respect user privacy
+  GDPR Compliant
+  UAE PDPL Compliant
+  Data minimization approach
+  Transparent privacy policy
+  User control over data
+  Secure data handling
+
+/* SUSTAINABILITY */
+
+  Digital-first approach reduces paper waste
+  Efficient property maintenance reduces energy waste
+  Optimized code for lower server energy consumption
+  Remote work reduces commuting emissions
+  Paperless contracts and agreements
+
+/* VALUES */
+
+  🏠 Simplicity in property management
+  🤝 Trust between all parties
+  💡 Innovation in real estate technology
+  🌟 Excellence in user experience
+  🔒 Security and privacy first
+  🌍 Contributing to Dubai's smart city vision 
