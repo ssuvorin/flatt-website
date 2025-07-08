@@ -57,7 +57,7 @@ export default function Hero() {
                 <strong>Flatt simplifies</strong> the way tenants and <strong>property owners manage</strong> rentals in Dubai. Our innovative platform makes <strong>property management</strong> effortless <strong>for everyone</strong> - from booking maintenance services to secure rent payments.
               </p>
               <p>
-                Experience how technology <strong>simplifies property management</strong> with our all-in-one mobile app designed specifically <strong>for everyone</strong> in Dubai's rental market.
+                Experience how technology <strong>simplifies property management</strong> with our all-in-one mobile app designed specifically <strong>for everyone</strong> in Dubai&apos;s rental market.
               </p>
             </motion.div>
 

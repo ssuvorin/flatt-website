@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       icon: UserCheck,
       title: 'Sign Up & Verify',
-      description: 'Create your account and verify your identity. Property owners can upload title deeds for full analytics access',
+      description: 'Create your account and verify your identity. Property owner&apos;s can upload title deeds for full analytics access',
       color: 'from-brand-blue to-brand-sky',
     },
     {

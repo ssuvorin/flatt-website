@@ -150,7 +150,7 @@ export default function Footer() {
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Flatt is a team of professionals focused on making <strong>property management 
                 simple and efficient</strong> using technology. Streamline your rental process 
-                with our mobile-first platform designed for Dubai's property market.
+                with our mobile-first platform designed for Dubai&apos;s property market.
               </p>
               
               <div className="space-y-3 text-sm text-gray-400">

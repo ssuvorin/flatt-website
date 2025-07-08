@@ -77,7 +77,7 @@ export default function CTA() {
           {[
             { icon: '🏠', text: 'Property Management' },
             { icon: '💳', text: 'Secure Payments' },
-            { icon: '👷', text: 'Vetted Contractors' },
+            { icon: '👷', text: 'Vetted Contractor&apos;s' },
             { icon: '📊', text: 'Real-time Analytics' },
           ].map((feature, index) => (
             <motion.div
