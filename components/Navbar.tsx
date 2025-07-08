@@ -31,9 +31,10 @@ export default function Navbar() {
   }, [prevScrollY])
 
   const navItems = [
-    { name: 'Features', href: '#features' },
-    { name: 'How it Works', href: '#how-it-works' },
-    { name: 'Showcase', href: '#showcase' },
+    { name: 'Features', href: '/#features' },
+    { name: 'How it Works', href: '/#how-it-works' },
+    { name: 'Showcase', href: '/#showcase' },
+    { name: 'Partners', href: '/partners' },
     { name: 'FAQ', href: '/faq' },
   ]
 
@@ -56,42 +57,40 @@ export default function Navbar() {
           transition={{ delay: 0.1 }}
           className="flex items-center space-x-2"
         >
-          <div className="w-8 h-8 flex items-center justify-center">
-            <Image
-              src="/flatt-full-fogo.png"
-              alt="Flatt Logo"
-              width={32}
-              height={32}
-              className="rounded-lg"
-            />
-          </div>
-          <span className="text-xl font-bold gradient-text">flatt</span>
+          <a href="/" className="flex items-center space-x-2 cursor-pointer" style={{ pointerEvents: 'auto' }}>
+            <div className="w-8 h-8 flex items-center justify-center">
+              <Image
+                src="/flatt-full-fogo.png"
+                alt="Flatt Logo"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
+            </div>
+            <span className="text-xl font-bold gradient-text">flatt</span>
+          </a>
         </motion.div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item, index) => (
-            <motion.a
+            <a
               key={item.name}
               href={item.href}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 + index * 0.1 }}
-              className="text-gray-700 hover:text-brand-blue transition-colors animate-underline"
+              className="text-gray-700 hover:text-blue-600 transition-colors animate-underline cursor-pointer"
+              style={{ pointerEvents: 'auto' }}
             >
               {item.name}
-            </motion.a>
+            </a>
           ))}
-          <motion.a
-            href="#download"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5 }}
-            className="button-primary flex items-center space-x-2"
+          <a
+            href="/#download"
+            className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 hover:scale-105 shadow-lg cursor-pointer"
+            style={{ pointerEvents: 'auto' }}
           >
             <Download size={16} />
             <span>Download</span>
-          </motion.a>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -120,15 +119,17 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-gray-700 hover:text-brand-blue transition-colors py-2"
+                className="text-gray-700 hover:text-blue-600 transition-colors py-2 cursor-pointer"
+                style={{ pointerEvents: 'auto' }}
               >
                 {item.name}
               </a>
             ))}
             <a
-              href="#download"
+              href="/#download"
               onClick={() => setIsOpen(false)}
-              className="button-primary flex items-center justify-center space-x-2 mt-4"
+              className="inline-flex items-center justify-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 mt-4 cursor-pointer"
+              style={{ pointerEvents: 'auto' }}
             >
               <Download size={16} />
               <span>Download</span>

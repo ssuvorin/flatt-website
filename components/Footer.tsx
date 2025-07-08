@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const footerLinks = {
@@ -10,6 +11,7 @@ export default function Footer() {
       { name: 'About Us', href: '#' },
       { name: 'How it Works', href: '#how-it-works' },
       { name: 'Features', href: '#features' },
+      { name: 'Partners', href: '/partners' },
       { name: 'Reviews', href: '#reviews' },
     ],
     legal: [
@@ -71,9 +73,13 @@ export default function Footer() {
               className="lg:col-span-2"
             >
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-sky rounded-lg flex items-center justify-center">
-                  <div className="w-5 h-5 border-2 border-white rounded-sm" />
-                </div>
+                <Image
+                  src="/flatt-full-fogo.png"
+                  alt="Flatt Logo"
+                  width={32}
+                  height={32}
+                  className="rounded-lg"
+                />
                 <span className="text-2xl font-bold gradient-text">flatt</span>
               </div>
               
