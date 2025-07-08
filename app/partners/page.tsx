@@ -262,7 +262,7 @@ export default function Partners() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Services We're Looking For
+              Services We&apos;re Looking For
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Join our platform if you provide any of these essential property services

@@ -28,19 +28,19 @@ const faqs = [
   },
   {
     question: 'Can property owners track multiple properties?',
-    answer: 'Yes, property owners can manage multiple properties from a single account. After uploading your title deeds for verification, you\'ll get access to comprehensive analytics and management tools for all your properties.'
+    answer: 'Yes, property owners can manage multiple properties from a single account. After uploading your title deeds for verification, you&apos;ll get access to comprehensive analytics and management tools for all your properties.'
   },
   {
-    question: 'What happens if I\'m not satisfied with a service?',
-    answer: 'We have a satisfaction guarantee. If you\'re not happy with the service, contact our support team via WhatsApp immediately. We\'ll work with you and the contractor to resolve the issue, and if necessary, arrange for the work to be redone at no extra cost.'
+    question: 'What happens if I&apos;m not satisfied with a service?',
+    answer: 'We have a satisfaction guarantee. If you&apos;re not happy with the service, contact our support team via WhatsApp immediately. We&apos;ll work with you and the contractor to resolve the issue, and if necessary, arrange for the work to be redone at no extra cost.'
   },
   {
     question: 'Is Flatt available outside of Dubai?',
-    answer: 'Currently, Flatt is focused on the Dubai market to ensure the highest quality service. We\'re planning to expand to other UAE emirates in the future. Follow our updates for expansion announcements.'
+    answer: 'Currently, Flatt is focused on the Dubai market to ensure the highest quality service. We&apos;re planning to expand to other UAE emirates in the future. Follow our updates for expansion announcements.'
   },
   {
     question: 'How do I rate and review contractors?',
-    answer: 'After each completed service, you\'ll receive a prompt to rate your experience and leave a review. This helps maintain service quality and assists other users in making informed decisions when choosing contractors.'
+    answer: 'After each completed service, you&apos;ll receive a prompt to rate your experience and leave a review. This helps maintain service quality and assists other users in making informed decisions when choosing contractors.'
   },
   {
     question: 'Can I schedule recurring services?',
@@ -124,8 +124,8 @@ export default function FAQ() {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             Still have questions?
           </h2>
-          <p className="text-gray-600 mb-6">
-            Our support team is here to help via WhatsApp. Get in touch and we'll respond within 24 hours
+          <p className="text-gray-400 text-sm">
+            Our support team is here to help via WhatsApp. Get in touch and we&apos;ll respond within 24 hours
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
