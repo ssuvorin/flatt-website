@@ -27,7 +27,8 @@ export default function CTA() {
 
         <div className="prose mx-auto text-center font-sans text-white mb-10" style={{ fontFamily: 'var(--font-montserrat)' }}>
           <p>
-            Flatt is the all-in-one app for property owners and tenants in Dubai. Manage maintenance, track payments, and access real-time analytics — simply and securely.
+            Flatt is the all-in-one app for property owners and tenants in Dubai
+            Manage maintenance, track payments, and access real-time analytics — simply and securely
           </p>
         </div>
 
