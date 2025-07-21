@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://flatt.ae
-
-# Sitemaps
 Sitemap: https://flatt.ae/sitemap.xml

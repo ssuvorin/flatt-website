@@ -88,82 +88,87 @@ function FAQItem({ faq, index }: { faq: typeof faqs[0], index: number }) {
 
 export default function FAQ() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-brand-gray pt-20">
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-gray-800">Frequently Asked</span>
-            <br />
-            <span className="gradient-text">Questions</span>
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about Flatt, our services, and how we can help 
-            streamline your property management needs
-          </p>
-        </motion.div>
+    <>
+      <div className="min-h-screen bg-gradient-to-b from-white to-brand-gray pt-20">
+        <div className="max-w-4xl mx-auto px-4 py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <span className="text-gray-800">Frequently Asked</span>
+              <br />
+              <span className="gradient-text">Questions</span>
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find answers to common questions about Flatt, our services, and how we can help 
+              streamline your property management needs
+            </p>
+          </motion.div>
 
-        <div className="space-y-2">
-          {faqs.map((faq, index) => (
-            <FAQItem key={index} faq={faq} index={index} />
-          ))}
+          <div className="space-y-2">
+            {faqs.map((faq, index) => (
+              <FAQItem key={index} faq={faq} index={index} />
+            ))}
+          </div>
+
+          {/* Contact CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-16 text-center glass rounded-xl p-8"
+          >
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Still have questions?
+            </h2>
+            <p className="text-gray-400 text-sm">
+              Our support team is here to help via WhatsApp. Get in touch and we&apos;ll respond within 24 hours
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://wa.me/971563118775"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary"
+              >
+                Contact Support
+              </a>
+              <a
+                href="/"
+                className="button-secondary"
+              >
+                Back to Home
+              </a>
+            </div>
+          </motion.div>
         </div>
 
-        {/* Contact CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-16 text-center glass rounded-xl p-8"
-        >
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Still have questions?
-          </h2>
-          <p className="text-gray-400 text-sm">
-            Our support team is here to help via WhatsApp. Get in touch and we&apos;ll respond within 24 hours
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/971563118775"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-primary"
-            >
-              Contact Support
-            </a>
-            <a
-              href="/"
-              className="button-secondary"
-            >
-              Back to Home
-            </a>
-          </div>
-        </motion.div>
+        {/* Structured Data for FAQ */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer
+                }
+              }))
+            })
+          }}
+        />
+        <div className="text-center text-xs text-gray-400 mt-8">
+          Learn how Flatt simplifies rentals in our <a href="/" className="underline hover:text-brand-blue">main app page</a>.
+        </div>
       </div>
-
-      {/* Structured Data for FAQ */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })
-        }}
-      />
-    </div>
+    </>
   )
 } 

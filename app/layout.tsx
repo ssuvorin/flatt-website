@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s | Flatt – Property Management & Maintenance Services in Dubai',
   },
   description:
-    'Flatt is the all-in-one mobile app that empowers Dubai property owners and tenants to manage rentals, book vetted maintenance, pay securely via Stripe and access real-time market analytics—anywhere, anytime.',
+    'Flatt connects Dubai property owners and tenants, enabling instant maintenance booking, secure Stripe payments and live market analytics – all in one mobile app.',
   keywords: ['property management', 'Dubai', 'rental', 'tenants', 'property owners', 'mobile app'],
   authors: [{ name: 'Flatt Team' }],
   creator: 'Flatt',
