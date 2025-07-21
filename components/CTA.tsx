@@ -32,7 +32,7 @@ export default function CTA() {
           </p>
         </div>
 
-        <section className="prose mx-auto text-center px-4 mt-8">
+        <section className="sr-only">
           <p>
             Whether you own a studio in Business Bay or rent a villa on the Palm, Flatt keeps every document,
             payment and service request in one secure place. Book vetted contractors in seconds,
