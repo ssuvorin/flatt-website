@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -11,10 +13,11 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Flatt – Property Management in Dubai',
-    template: '%s | Flatt – Property Management in Dubai',
+    default: 'Flatt – Property Management & Maintenance Services in Dubai',
+    template: '%s | Flatt – Property Management & Maintenance Services in Dubai',
   },
-  description: 'Flatt helps tenants & property owners manage rentals, book services and pay securely – all in one mobile app.',
+  description:
+    'Flatt is the all-in-one mobile app that empowers Dubai property owners and tenants to manage rentals, book vetted maintenance, pay securely via Stripe and access real-time market analytics—anywhere, anytime.',
   keywords: ['property management', 'Dubai', 'rental', 'tenants', 'property owners', 'mobile app'],
   authors: [{ name: 'Flatt Team' }],
   creator: 'Flatt',
@@ -79,6 +82,19 @@ export default function RootLayout({
         <link rel="icon" href="/logo_blue.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/flatt-full-logo.svg" />
         <link rel="apple-touch-icon" sizes="180x180" href="/flatt-full-logo.svg" />
+        <link rel="canonical" href="https://flatt.ae/" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WL75MBXLEE"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WL75MBXLEE');
+          `}
+        </Script>
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <div className="cursor-glow" />
@@ -98,6 +114,7 @@ export default function RootLayout({
           ))}
         </div>
         {children}
+        <Analytics />
       </body>
     </html>
   )

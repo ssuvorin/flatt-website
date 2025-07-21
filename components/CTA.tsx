@@ -25,6 +25,12 @@ export default function CTA() {
           </p>
         </motion.div>
 
+        <div className="prose mx-auto text-center font-sans text-white mb-10" style={{ fontFamily: 'var(--font-montserrat)' }}>
+          <p>
+            Flatt empowers Dubai property owners and tenants to take control of their property experience. Effortlessly manage maintenance requests, track payments, and access real-time analytics—all from your phone. Our vetted contractor network ensures quality service, while secure Stripe payments offer peace of mind. With Flatt, you save time, reduce hassle, and gain valuable insights, making property management simpler and more transparent than ever before.
+          </p>
+        </div>
+
         {/* Download Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
