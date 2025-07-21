@@ -208,10 +208,11 @@ export default function AppShowcase() {
                           <div className="flex items-center">
                             <div className="w-8 h-8 bg-brand-blue rounded-lg mr-3 flex items-center justify-center">
                               <Image
-                                src="/flatt-full-fogo.png"
+                                src="/flatt-full-fogo.webp"
                                 alt="Flatt Logo"
                                 width={20}
                                 height={20}
+                                sizes="(min-width:768px) 20px, 100vw"
                                 className="rounded-sm"
                               />
                             </div>

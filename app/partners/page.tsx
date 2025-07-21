@@ -117,13 +117,15 @@ export default function Partners() {
             </motion.p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="mailto:partners@flatt.ae?subject=Partnership Inquiry - Flatt&body=Hello Flatt Team,%0D%0A%0D%0AI am interested in becoming a partner and would like to learn more about the opportunities available.%0D%0A%0D%0AThank you!"
-                className="inline-flex items-center justify-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 hover:scale-105 hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
-              >
-                <Mail size={20} />
-                <span>Become a Partner</span>
-              </a>
+              {(() => { const email = 'partners' + '@' + 'flatt.ae'; const mailto = `mailto:${email}?subject=Partnership Inquiry - Flatt&body=Hello Flatt Team,%0D%0A%0D%0AI am interested in becoming a partner and would like to learn more about the opportunities available.%0D%0A%0D%0AThank you!`; return (
+                <a
+                  href={mailto}
+                  className="inline-flex items-center justify-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 hover:scale-105 hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
+                >
+                  <Mail size={20} />
+                  <span>Become a Partner</span>
+                </a>
+              ); })()}
               <a
                 href="#benefits"
                 className="inline-flex items-center justify-center space-x-2 border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-blue-600 hover:text-white hover:scale-105 hover:-translate-y-0.5"
@@ -321,12 +323,14 @@ export default function Partners() {
               <div className="space-y-4 text-white/90">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail size={18} />
-                  <a 
-                    href="mailto:partners@flatt.ae?subject=Partnership Inquiry - Flatt&body=Hello Flatt Team,%0D%0A%0D%0AI am interested in becoming a partner and would like to learn more about the opportunities available.%0D%0A%0D%0AThank you!" 
-                    className="hover:text-yellow-500 transition-colors"
-                  >
-                    partners@flatt.ae
-                  </a>
+                  {(() => { const email = 'partners' + '@' + 'flatt.ae'; const mailto = `mailto:${email}?subject=Partnership Inquiry - Flatt&body=Hello Flatt Team,%0D%0A%0D%0AI am interested in becoming a partner and would like to learn more about the opportunities available.%0D%0A%0D%0AThank you!`; return (
+                    <a 
+                      href={mailto}
+                      className="hover:text-yellow-500 transition-colors"
+                    >
+                      {email}
+                    </a>
+                  ); })()}
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <Phone size={18} />
@@ -341,13 +345,15 @@ export default function Partners() {
               </div>
               
               <div className="mt-8">
-                <a
-                  href="mailto:partners@flatt.ae?subject=Partnership Inquiry - Flatt&body=Hello Flatt Team,%0D%0A%0D%0AI am interested in becoming a partner and would like to learn more about the opportunities available.%0D%0A%0D%0AThank you!"
-                  className="inline-flex items-center justify-center space-x-2 bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  <Mail size={20} />
-                  <span>Send Partnership Inquiry</span>
-                </a>
+                {(() => { const email = 'partners' + '@' + 'flatt.ae'; const mailto = `mailto:${email}?subject=Partnership Inquiry - Flatt&body=Hello Flatt Team,%0D%0A%0D%0AI am interested in becoming a partner and would like to learn more about the opportunities available.%0D%0A%0D%0AThank you!`; return (
+                  <a
+                    href={mailto}
+                    className="inline-flex items-center justify-center space-x-2 bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-blue-600 hover:scale-105 shadow-lg hover:shadow-xl"
+                  >
+                    <Mail size={20} />
+                    <span>Send Partnership Inquiry</span>
+                  </a>
+                ); })()}
               </div>
             </div>
           </motion.div>

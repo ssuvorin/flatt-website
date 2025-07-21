@@ -305,7 +305,7 @@ export default function PrivacyPolicy() {
                 <div>
                   <h3 className="text-lg font-medium text-gray-800">Email</h3>
                   <p className="text-gray-600">
-                    <a href="mailto:privacy@flatt.ae" className="text-brand-blue hover:underline">privacy@flatt.ae</a> or <a href="mailto:team@flatt.ae" className="text-brand-blue hover:underline">team@flatt.ae</a>
+                    {(() => { const email1 = 'privacy' + '@' + 'flatt.ae'; const email2 = 'team' + '@' + 'flatt.ae'; return <><a href={`mailto:${email1}`} className="text-brand-blue hover:underline">{email1}</a> or <a href={`mailto:${email2}`} className="text-brand-blue hover:underline">{email2}</a></>; })()}
                   </p>
                   <p className="text-gray-500 text-sm">
                     This is our dedicated email for privacy inquiries and support. Please include as much detail as possible in your request or question, along with your contact information, and we will respond promptly.

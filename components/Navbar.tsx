@@ -60,10 +60,11 @@ export default function Navbar() {
           <a href="/" className="flex items-center space-x-2 cursor-pointer" style={{ pointerEvents: 'auto' }}>
             <div className="w-8 h-8 flex items-center justify-center">
               <Image
-                src="/flatt-full-fogo.png"
+                src="/flatt-full-fogo.webp"
                 alt="Flatt Logo"
                 width={32}
                 height={32}
+                sizes="(min-width:768px) 32px, 100vw"
                 className="rounded-lg"
               />
             </div>

@@ -163,10 +163,11 @@ export default function Hero() {
                         <div className="text-center mb-6">
                           <div className="w-12 h-12 bg-white/20 backdrop-blur rounded-xl mx-auto mb-3 flex items-center justify-center">
                             <Image
-                              src="/flatt-full-fogo.png"
+                              src="/flatt-full-fogo.webp"
                               alt="Flatt Logo"
                               width={28}
                               height={28}
+                              sizes="(min-width:768px) 28px, 100vw"
                               className="rounded-lg"
                             />
                           </div>

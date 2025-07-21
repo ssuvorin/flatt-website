@@ -78,8 +78,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="theme-color" content="#006AFF" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/logo_blue.svg" type="image/svg+xml" />
-        <link rel="icon" href="/logo_blue.svg" sizes="any" />
+        <link rel="preload" as="image" href="/hero.avif" type="image/avif" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" sizes="any" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:`
+        {"@context":"https://schema.org","@type":"MobileApplication","name":"Flatt","operatingSystem":"iOS, Android","applicationCategory":"PropertyManagementApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"AED"},"downloadUrl":["https://apps.apple.com/us/app/flatt-ae/id6742777441","https://play.google.com/store/apps/details?id=com.flattllcfz.app"]}
+        `}} />
         <link rel="apple-touch-icon" href="/flatt-full-logo.svg" />
         <link rel="apple-touch-icon" sizes="180x180" href="/flatt-full-logo.svg" />
         <link rel="canonical" href="https://flatt.ae/" />

@@ -74,10 +74,11 @@ export default function Footer() {
             >
               <div className="flex items-center space-x-2 mb-6">
                 <Image
-                  src="/flatt-full-fogo.png"
+                  src="/flatt-full-fogo.webp"
                   alt="Flatt Logo"
                   width={32}
                   height={32}
+                  sizes="(min-width:768px) 32px, 100vw"
                   className="rounded-lg"
                 />
                 <span className="text-2xl font-bold gradient-text">flatt</span>
@@ -96,9 +97,9 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail size={16} />
-                  <a href="mailto:team@flatt.ae" className="hover:text-brand-sky transition-colors">
-                    team@flatt.ae
-                  </a>
+                  {(() => { const email = 'team' + '@' + 'flatt.ae'; return (
+                    <a href={`mailto:${email}`} className="hover:text-brand-sky transition-colors">{email}</a>
+                  )})()}
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone size={16} />

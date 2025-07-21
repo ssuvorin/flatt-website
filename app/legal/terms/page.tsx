@@ -300,9 +300,9 @@ export default function TermsOfUse() {
               <div className="space-y-2 text-gray-600">
                 <p>
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:team@flatt.ae" className="text-brand-blue hover:underline">
-                    team@flatt.ae
-                  </a>
+                  {(() => { const email = 'team' + '@' + 'flatt.ae'; return (
+                    <a href={`mailto:${email}`} className="text-brand-blue hover:underline">{email}</a>
+                  )})()}
                 </p>
                 <p>
                   <strong>WhatsApp Support:</strong>{' '}
