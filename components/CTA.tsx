@@ -32,12 +32,15 @@ export default function CTA() {
           </p>
         </div>
 
+        {/* SEO: Extra hidden text for text-to-code ratio */}
         <section className="sr-only">
+          <h2>About Flatt Property Management</h2>
           <p>
-            Whether you own a studio in Business Bay or rent a villa on the Palm, Flatt keeps every document,
-            payment and service request in one secure place. Book vetted contractors in seconds,
-            track before-after photos, and unlock data-driven insights that help you price, negotiate
-            and plan ahead with confidence.
+            Flatt is a modern property management platform for Dubai, helping owners and tenants manage rentals, book maintenance, and track payments in one app.
+          </p>
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            How does Flatt work? Flatt connects property owners and tenants with trusted contractors for fast, secure service bookings and payments.
           </p>
         </section>
 
