@@ -27,7 +27,7 @@ export default function Features() {
     {
       icon: Shield,
       title: 'Complete Transparency',
-      description: 'Before/after photos & detailed reports. Know exactly what you&apos;re paying for every time',
+      description: 'Before/after photos & detailed reports. Know exactly what you're paying for every time',
       color: 'from-orange-500 to-orange-600',
     },
     {
