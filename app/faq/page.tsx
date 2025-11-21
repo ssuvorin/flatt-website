@@ -126,7 +126,7 @@ export default function FAQ() {
               Still have questions?
             </h2>
             <p className="text-gray-600 text-base mb-6">
-              Our support team is here to help via WhatsApp. Get in touch and we'll respond within 24 hours
+              Our support team is here to help via WhatsApp. Get in touch and {"we'll"} respond within 24 hours
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
               <a

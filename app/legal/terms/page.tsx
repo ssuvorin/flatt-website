@@ -73,7 +73,7 @@ export default function TermsOfUse() {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-medium text-gray-800 mb-3">Flatt.ae's Role and Use of Services</h3>
+                  <h3 className="text-xl font-medium text-gray-800 mb-3">Flatt.ae{"'"}s Role and Use of Services</h3>
                   <div className="space-y-3">
                     <div className="flex items-start">
                       <span className="text-brand-blue font-semibold mr-2">1.</span>

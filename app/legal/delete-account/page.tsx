@@ -142,7 +142,7 @@ export default function DeleteAccount() {
                 </h3>
                 
                 <p className="text-blue-700 leading-relaxed mb-4">
-                  If you're having trouble deleting your account or need assistance with the process, our support team is here to help via WhatsApp:
+                  If {"you're"} having trouble deleting your account or need assistance with the process, our support team is here to help via WhatsApp:
                 </p>
                 
                 <div className="space-y-3 text-blue-700">
