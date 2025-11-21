@@ -27,20 +27,20 @@ const faqs = [
     answer: 'Payments are processed securely through Stripe. You can pay by credit card, debit card, or other supported payment methods. Payment is only released to contractors after service completion and your approval.'
   },
   {
-    question: 'Can property owners track multiple properties?',
-    answer: 'Yes, property owners can manage multiple properties from a single account. After uploading your title deeds for verification, you'll get access to comprehensive analytics and management tools for all your properties.'
+    question: "Can property owners track multiple properties?",
+    answer: "Yes, property owners can manage multiple properties from a single account. After uploading your title deeds for verification, you'll get access to comprehensive analytics and management tools for all your properties."
   },
   {
-    question: 'What happens if I'm not satisfied with a service?',
-    answer: 'We have a satisfaction guarantee. If you're not happy with the service, contact our support team via WhatsApp immediately. We'll work with you and the contractor to resolve the issue, and if necessary, arrange for the work to be redone at no extra cost.'
+    question: "What happens if I'm not satisfied with a service?",
+    answer: "We have a satisfaction guarantee. If you're not happy with the service, contact our support team via WhatsApp immediately. We'll work with you and the contractor to resolve the issue, and if necessary, arrange for the work to be redone at no extra cost."
   },
   {
     question: 'Is Flatt available outside of Dubai?',
-    answer: 'Currently, Flatt is focused on the Dubai market to ensure the highest quality service. We're planning to expand to other UAE emirates in the future. Follow our updates for expansion announcements.'
+    answer: "Currently, Flatt is focused on the Dubai market to ensure the highest quality service. We're planning to expand to other UAE emirates in the future. Follow our updates for expansion announcements."
   },
   {
     question: 'How do I rate and review contractors?',
-    answer: 'After each completed service, you'll receive a prompt to rate your experience and leave a review. This helps maintain service quality and assists other users in making informed decisions when choosing contractors.'
+    answer: "After each completed service, you'll receive a prompt to rate your experience and leave a review. This helps maintain service quality and assists other users in making informed decisions when choosing contractors."
   },
   {
     question: 'Can I schedule recurring services?',
@@ -120,15 +120,15 @@ export default function FAQ() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-16 text-center glass rounded-xl p-8"
+            className="mt-16 text-center glass rounded-xl p-8 md:p-10"
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">
               Still have questions?
             </h2>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-600 text-base mb-6">
               Our support team is here to help via WhatsApp. Get in touch and we'll respond within 24 hours
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
               <a
                 href="https://wa.me/971563118775"
                 target="_blank"
